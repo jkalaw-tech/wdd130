@@ -1,0 +1,76 @@
+/* temple.css */
+
+/* Global resets and font */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header bar */
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Main container to center content */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Temple image styling */
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto 1.5rem auto;
+}
+
+/* About & Visiting Info boxes */
+.section-box {
+    background-color: #eee;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.section-box h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #999;
+    padding-bottom: 0.3rem;
+}
+
+/* Lists inside the boxes */
+.section-box ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    padding: 0;
+}
+
+/* Footer style */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Link style */
+a {
+    color: #0066cc;
+}
+a:hover {
+    text-decoration: underline;
+}
