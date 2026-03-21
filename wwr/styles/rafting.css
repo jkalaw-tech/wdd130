@@ -1,76 +1,126 @@
-/* VARIABLES */
 :root {
-  --primary-color: #0055a5;
-  --accent1-color: #ff6600;
-  --body-font: Arial, sans-serif;
-  --heading-font: 'Trebuchet MS', sans-serif;
+  /* Color Palette (WCAG compliant) */
+  --primary-color: rgb(0, 85, 165);      /* blue */
+  --accent-color: rgb(204, 82, 0);       /* dark orange */
+  --accent1-color: rgb(204, 82, 0);      /* for hero overlay or accents */
+  --light-color: rgb(255, 255, 255);     /* white */
+  --dark-color: rgb(0, 0, 0);            /* black */
+  --overlay-color: rgba(0, 0, 0, 0.7);   /* hero overlay */
+  
+  --body-font: 'Arial', sans-serif;
+  --heading-font: 'Georgia', serif;
 }
 
-/* UNIVERSAL RESET */
+/* Universal Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY STYLES */
+/* Body Styling */
 body {
   font-family: var(--body-font);
   color: var(--accent1-color);
+  background-color: var(--light-color);
+  line-height: 1.6;
 }
 
-/* CENTER CONTENT */
+/* Layout: header, main, footer */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-/* HEADINGS */
+/* Headings */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* BASIC ELEMENT SPACING */
+/* Basic margin/padding */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* HERO SECTION */
+/* Remove underline from social media links */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* HERO DIV */
 .hero {
   position: relative;
 }
+
 .hero img {
   display: block;
   width: 100%;
   height: auto;
 }
+
+/* Hero Heading */
 .hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
+  opacity: 0.85;
+  background-color: var(--overlay-color);
+  color: var(--light-color);
 }
+
+/* Hero Article */
 .hero article {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(0,0,0,0.5);
-  color: #fff;
-  padding: 16px;
+  background-color: var(--overlay-color);
+  color: var(--light-color);
+  padding: 10px;
 }
+
 .hero article img {
   float: right;
   width: 125px;
-  margin-left: 16px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
 }
 
-/* FOOTER SOCIAL MEDIA */
-.socialmedia a {
-  text-decoration: none;
+/* Footer */
+footer p {
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--dark-color);
+}
+
+footer nav.socialmedia {
+  text-align: center;
+  margin-top: 8px;
+}
+
+footer nav.socialmedia a img {
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+}
+
+/* Optional: section styling */
+section {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding: 16px;
+  border-radius: 4px;
+}
+
+/* Contrast improvements for links and accents */
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--accent-color);
 }
