@@ -104,7 +104,9 @@ body {
   counter-increment: q-counter;
   position: absolute;
   top: -0.3rem;
-  right: 1.25rem;
+  right: 1rem;
+  bottom: 0.5rem;
+  top:auto;
   font-family: var(--font-display);
   font-size: 6rem;
   font-weight: 900;
@@ -112,6 +114,7 @@ body {
   line-height: 1;
   user-select: none;
   pointer-events: none;
+  opacity:0.6;
 }
 
 .quiz-form {
