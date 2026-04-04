@@ -121,6 +121,7 @@ a:hover {
   color: var(--accent-color);
 }
 
+
 /* Contact section outer wrapper */
 .contact-section {
   display: flex;
@@ -193,7 +194,7 @@ a:hover {
   padding: 16px;
 }
 
-.contact-form {
+form.contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
