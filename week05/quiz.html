@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & CSS Knowledge Quiz</title>
+  <link rel="stylesheet" href="../styles/quiz.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <header class="quiz-header">
+      <div class="badge">Week 05</div>
+      <h1>HTML &amp; CSS<br /><span class="accent">Knowledge Quiz</span></h1>
+      <p class="subtitle">Test your understanding of web fundamentals. Answer all four questions, then submit.</p>
+    </header>
+
+    <main>
+      <form class="quiz-form" action="#" method="post">
+
+        <!-- Q1: Text input (fill in the blank) -->
+        <div class="question-card" style="--card-num: 1">
+          <div class="question-meta">
+            <span class="q-number">01</span>
+            <span class="q-type">Fill in the Blank</span>
+          </div>
+          <label for="q1" class="question-label">
+            What HTML element is used to define the <em>largest</em> heading on a page?
+          </label>
+          <div class="input-wrap">
+            <input
+              type="text"
+              id="q1"
+              name="q1"
+              placeholder="e.g., &lt;h1&gt;"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <!-- Q2: Textarea (short answer) -->
+        <div class="question-card" style="--card-num: 2">
+          <div class="question-meta">
+            <span class="q-number">02</span>
+            <span class="q-type">Short Answer</span>
+          </div>
+          <label for="q2" class="question-label">
+            In your own words, explain the difference between <code>class</code> and <code>id</code> attributes in HTML. When would you use each?
+          </label>
+          <div class="input-wrap">
+            <textarea
+              id="q2"
+              name="q2"
+              rows="5"
+              placeholder="Write your answer here…"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Q3: Select (dropdown) -->
+        <div class="question-card" style="--card-num: 3">
+          <div class="question-meta">
+            <span class="q-number">03</span>
+            <span class="q-type">Multiple Choice</span>
+          </div>
+          <label for="q3" class="question-label">
+            Which CSS property controls the <em>space between</em> an element's border and its surrounding elements?
+          </label>
+          <div class="input-wrap select-wrap">
+            <select id="q3" name="q3">
+              <option value="" selected disabled>Choose one…</option>
+              <option value="padding">padding</option>
+              <option value="margin">margin</option>
+              <option value="border-spacing">border-spacing</option>
+              <option value="gap">gap</option>
+            </select>
+            <span class="select-arrow">&#9660;</span>
+          </div>
+        </div>
+
+        <!-- Q4: Number input -->
+        <div class="question-card" style="--card-num: 4">
+          <div class="question-meta">
+            <span class="q-number">04</span>
+            <span class="q-type">Numeric Answer</span>
+          </div>
+          <label for="q4" class="question-label">
+            How many heading levels does HTML provide? (Enter the exact number.)
+          </label>
+          <div class="input-wrap number-wrap">
+            <input
+              type="number"
+              id="q4"
+              name="q4"
+              min="1"
+              max="20"
+              placeholder="0"
+            />
+          </div>
+        </div>
+
+        <!-- Submit -->
+        <div class="form-footer">
+          <button type="submit" class="submit-btn">
+            <span class="btn-text">Submit Quiz</span>
+            <span class="btn-icon">&#10140;</span>
+          </button>
+        </div>
+
+      </form>
+    </main>
+
+    <footer class="quiz-footer">
+      <p>Web Development &mdash; Week 05 Assignment</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
